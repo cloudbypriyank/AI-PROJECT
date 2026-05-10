@@ -1,0 +1,137 @@
+[
+  {
+    "id": "KB-001",
+    "title": "How to Configure Alert Thresholds",
+    "category": "troubleshooting",
+    "tags": ["alerts", "configuration", "thresholds"],
+    "content": "To configure alert thresholds in CloudDash: 1. Navigate to the Monitoring tab. 2. Select the specific resource (e.g., EC2 instance). 3. Click on 'Alert Rules'. 4. Define your threshold (e.g., CPU > 80% for 5 mins). 5. Set the notification channel (Slack, Email, or PagerDuty). 6. Save rule. Common errors include setting thresholds too low, causing alert fatigue.",
+    "last_updated": "2026-04-15",
+    "applies_to": ["Pro", "Enterprise"]
+  },
+  {
+    "id": "KB-002",
+    "title": "Resetting your API Key",
+    "category": "FAQs",
+    "tags": ["account", "security", "api"],
+    "content": "To reset your CloudDash API key: Go to Settings > Developer Keys. Click 'Rotate Key'. Note that your old key will be revoked immediately. Ensure you update all integration scripts to avoid downtime.",
+    "last_updated": "2026-03-10",
+    "applies_to": ["Basic", "Pro", "Enterprise"]
+  },
+  {
+    "id": "KB-003",
+    "title": "Supported Cloud Providers",
+    "category": "FAQs",
+    "tags": ["cloud", "aws", "gcp", "azure"],
+    "content": "CloudDash currently supports AWS (Amazon Web Services), Google Cloud Platform (GCP), and Microsoft Azure. Support for DigitalOcean is on our Q4 roadmap.",
+    "last_updated": "2026-01-20",
+    "applies_to": ["Basic", "Pro", "Enterprise"]
+  },
+  {
+    "id": "KB-004",
+    "title": "AWS Integration Troubleshooting",
+    "category": "troubleshooting",
+    "tags": ["aws", "iam", "permissions"],
+    "content": "If your AWS integration is failing: 1. Verify the IAM Role has the 'ReadOnlyAccess' policy. 2. Ensure the External ID matches the one provided in the CloudDash dashboard. 3. Check for VPC endpoint restrictions that might block outbound telemetry.",
+    "last_updated": "2026-05-01",
+    "applies_to": ["Pro", "Enterprise"]
+  },
+  {
+    "id": "KB-005",
+    "title": "CloudDash Pricing Plans",
+    "category": "Billing & Pricing",
+    "tags": ["pricing", "plans", "usage"],
+    "content": "Basic: Free (up to 3 nodes). Pro: $49/mo (up to 50 nodes). Enterprise: Custom pricing for over 50 nodes, including SSO and 24/7 support. Annual billing receives a 20% discount.",
+    "last_updated": "2026-02-15",
+    "applies_to": ["All"]
+  },
+  {
+    "id": "KB-006",
+    "title": "Invoice Explanation",
+    "category": "Billing & Pricing",
+    "tags": ["invoice", "taxes", "billing"],
+    "content": "Invoices are generated on the 1st of every month. Each invoice includes your subscription base fee plus any overages from the previous month. Overages are calculated based on 'peak node count' during the billing cycle.",
+    "last_updated": "2025-12-01",
+    "applies_to": ["Pro", "Enterprise"]
+  },
+  {
+    "id": "KB-007",
+    "title": "Setting up SSO with Okta",
+    "category": "Account & Access",
+    "tags": ["sso", "okta", "saml"],
+    "content": "CloudDash supports SAML 2.0. To set up Okta: 1. Create a new SAML App in Okta. 2. Use the Single Sign On URL provided in CloudDash Settings > SSO. 3. Upload your Okta Metadata XML to CloudDash. 4. Map user groups if using Enterprise level.",
+    "last_updated": "2026-04-20",
+    "applies_to": ["Enterprise"]
+  },
+  {
+    "id": "KB-008",
+    "title": "Team Management & RBAC",
+    "category": "Account & Access",
+    "tags": ["teams", "roles", "permissions"],
+    "content": "Users can be assigned roles: Admin (full access), Editor (manage alerts/configs), and Viewer (read-only). Access is managed at the Organization level in Settings > Team.",
+    "last_updated": "2026-03-05",
+    "applies_to": ["Pro", "Enterprise"]
+  },
+  {
+    "id": "KB-009",
+    "title": "Dashboard Loading Slowly",
+    "category": "troubleshooting",
+    "tags": ["performance", "dashboard", "latency"],
+    "content": "If the dashboard is slow: 1. Reduce the time range (e.g., from 30 days to 1 hour). 2. Check your browser's console for 429 (Rate Limit) errors. 3. Ensure you aren't loading too many high-cardinality metrics in a single view.",
+    "last_updated": "2026-05-02",
+    "applies_to": ["Basic", "Pro", "Enterprise"]
+  },
+  {
+    "id": "KB-010",
+    "title": "Alert Rules API Reference",
+    "category": "API Documentation",
+    "tags": ["api", "endpoints", "alerts"],
+    "content": "POST /v1/alerts: Create a new alert. Required fields: name, threshold, condition, severity. GET /v1/alerts: List all configured alerts. Rate limit: 100 requests per minute.",
+    "last_updated": "2026-01-10",
+    "applies_to": ["Pro", "Enterprise"]
+  },
+  {
+    "id": "KB-011",
+    "title": "Inviting Team Members",
+    "category": "Account & Access",
+    "tags": ["invite", "teams", "onboarding"],
+    "content": "To invite team members: 1. Go to Settings > Team. 2. Click 'Invite User'. 3. Enter their email and assign a role. An invitation link will be sent. Links expire after 7 days.",
+    "last_updated": "2026-02-28",
+    "applies_to": ["Pro", "Enterprise"]
+  },
+  {
+    "id": "KB-012",
+    "title": "Refund Policy",
+    "category": "Billing & Pricing",
+    "tags": ["refund", "billing", "policy"],
+    "content": "We offer a 30-day money-back guarantee for initial subscriptions. For monthly renewals, refunds are only issued if requested within 48 hours of charge and if usage was negligible.",
+    "last_updated": "2025-11-20",
+    "applies_to": ["Pro", "Enterprise"]
+  },
+  {
+    "id": "KB-013",
+    "title": "Integrating with Slack",
+    "category": "troubleshooting",
+    "tags": ["slack", "integration", "notifications"],
+    "content": "If Slack notifications aren't appearing: 1. Checks if the CloudDash app is added to the private channel. 2. Verify settings in Settings > Notifications. 3. Ensure your Slack workspace allows third-party integration apps.",
+    "last_updated": "2026-03-15",
+    "applies_to": ["Basic", "Pro", "Enterprise"]
+  },
+  {
+    "id": "KB-014",
+    "title": "Cost Optimization Service",
+    "category": "FAQs",
+    "tags": ["cost", "savings", "aws"],
+    "content": "CloudDash analyzes your instance types and identifies 'zombie' or under-utilized resources. Our cost optimizer can save users up to 30% on cloud spend by recommending instance downsizing.",
+    "last_updated": "2026-04-01",
+    "applies_to": ["Pro", "Enterprise"]
+  },
+  {
+    "id": "KB-015",
+    "title": "Webhook Configuration",
+    "category": "API Documentation",
+    "tags": ["webhooks", "api", "events"],
+    "content": "You can configure webhooks for real-time event delivery. Go to Settings > Webhooks. We support HMAC signatures for verification. Events include alert.fired, alert.resolved, and billing.invoice_paid.",
+    "last_updated": "2026-02-10",
+    "applies_to": ["Enterprise"]
+  }
+]
