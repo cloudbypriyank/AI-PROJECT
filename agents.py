@@ -14,7 +14,6 @@ from dotenv import load_dotenv
 from llama_index.core import Settings, VectorStoreIndex, SimpleDirectoryReader
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from transformers import AutoTokenizer
-from llama_index.llms.huggingface import HuggingFaceLLM
 from llama_index.llms.gemini import Gemini
 
 import os
