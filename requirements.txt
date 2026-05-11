@@ -5,3 +5,4 @@ python-dotenv
 llama-index
 llama-index-llms-gemini
 llama-index-embeddings-huggingface
+Pillow==10.3.0
