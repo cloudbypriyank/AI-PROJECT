@@ -8,7 +8,7 @@ graph TD
     F --> H[Final Response + TTS]
     G --> H
     E --> I[JSON Audit Log]
-    
+
     classDef agent fill:#c9e4ff,stroke:#1e88e5,stroke-width:2px;
     classDef data fill:#fff9c4,stroke:#fbc02d,stroke-width:2px;
     classDef process fill:#dcedc8,stroke:#689f38,stroke-width:2px;
