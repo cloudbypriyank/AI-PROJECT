@@ -6,3 +6,5 @@ llama-index
 llama-index-llms-gemini
 llama-index-embeddings-huggingface
 Pillow==10.3.0
+torch --index-url https://download.pytorch.org/whl/cpu
+torchvision --index-url https://download.pytorch.org/whl/cpu
